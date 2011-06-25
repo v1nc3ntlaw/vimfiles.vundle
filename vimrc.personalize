@@ -8,6 +8,18 @@ else
   colors v13
 endif
 
+" Basic settings
+syntax on
+filetype on
+filetype plugin on
+filetype indent on
+set nocp
+set number
+set cindent
+set incsearch
+set autoindent
+set smartindent
+
 " Converting tabs to spaces
 " http://vim.wikia.com/wiki/Converting_tabs_to_spaces
 set tabstop=2
