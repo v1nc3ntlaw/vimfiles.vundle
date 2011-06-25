@@ -19,6 +19,15 @@ set cindent
 set incsearch
 set autoindent
 set smartindent
+set showcmd          "show incomplete cmds down the bottom
+set showmode         "show current mode down the bottom
+set history=1000     "store lots of :cmdline history
+set hlsearch         "hilight searches by default
+set incsearch        "find the next match as we type the search
+set linespace=4      "add some line space for easy reading
+set showbreak=...
+set visualbell t_vb= "disable visual bell
+set wrap linebreak nolist
 
 " Converting tabs to spaces
 " http://vim.wikia.com/wiki/Converting_tabs_to_spaces
@@ -26,3 +35,58 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+
+" 使用 Ctrl+F2 隱藏或顯示 Gvim 的選單
+set guioptions-=T
+set guioptions-=m
+map <silent> <C-F2> :if &guioptions =~# 'T' <Bar>
+  \   set guioptions-=T <Bar>
+  \   set guioptions-=m <Bar>
+  \ else <Bar>
+  \   set guioptions+=T <Bar>
+  \   set guioptions+=m <Bar>
+  \ endif<CR>
+
+" 自動到最後離開的位置
+if has("autocmd")
+  autocmd BufRead *.txt set tw=78
+  autocmd BufReadPost *
+    \ if line("'\"") > 0 && line ("'\"") <= line("$") |
+    \   exe "normal g'\"" |
+    \ endif
+endif
+
+" Function key 快速切換 Buffer
+if $OSTYPE == 'darwin10.0'
+  nnoremap <F11>       :bp!<CR>
+  nnoremap <Leader>11  :bp!<CR>
+  inoremap <F11> <ESC> :bp!<CR>
+
+  nnoremap <F12>       :bn!<CR>
+  nnoremap <Leader>12  :bn!<CR>
+  inoremap <F12> <ESC> :bn!<CR>
+else
+  nnoremap <F3>       :bp!<CR>
+  nnoremap <Leader>3  :bp!<CR>
+  inoremap <F3> <ESC> :bp!<CR>
+
+  nnoremap <F4>       :bn!<CR>
+  nnoremap <Leader>4  :bn!<CR>
+  inoremap <F4> <ESC> :bn!<CR>
+endif
+
+" make possible to navigate within lines of wrapped lines
+" 使用上下鍵可在自動換行之間移動
+map  <DOWN> gj
+map  <UP> gk
+nmap <Down> gj
+nmap <Up> gk
+imap <DOWN> <ESC>gji
+imap <UP> <ESC>gki
+set fo=l
+
+" Ctrl + h, j, k, l 游標在分割視窗間移動
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
