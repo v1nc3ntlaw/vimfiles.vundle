@@ -1,5 +1,7 @@
 " github repos
 Bundle 'tpope/vim-fugitive'
+Bundle 'mileszs/ack.vim'
+map <F2> :execute "Ack \'" . expand("<cword>") . "\'"<CR>
 
 " vim-scripts repos
 Bundle 'Color-Sampler-Pack'

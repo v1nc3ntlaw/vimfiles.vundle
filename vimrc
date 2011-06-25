@@ -1,11 +1,11 @@
-if filereadable(expand("vimrc.vundle"))
-  source vimrc.vundle
+if filereadable(expand("~/.vim/vimrc.vundle"))
+  source ~/.vim/vimrc.vundle
 endif
 
-if filereadable(expand("vimrc.plugins"))
-  source vimrc.plugins
+if filereadable(expand("~/.vim/vimrc.plugins"))
+  source ~/.vim/vimrc.plugins
 endif
 
-if filereadable(expand("vimrc.personalize"))
-  source vimrc.personalize
+if filereadable(expand("~/.vim/vimrc.personalize"))
+  source ~/.vim/vimrc.personalize
 endif
