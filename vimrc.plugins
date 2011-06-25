@@ -1,5 +1,7 @@
 " github repos
 Bundle 'tpope/vim-fugitive'
+Bundle 'motemen/git-vim'
+Bundle 'csexton/rvm.vim'
 Bundle 'mileszs/ack.vim'
 map <F2> :execute "Ack \'" . expand("<cword>") . "\'"<CR>
 

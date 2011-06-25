@@ -9,3 +9,7 @@ endif
 if filereadable(expand("~/.vim/vimrc.personalize"))
   source ~/.vim/vimrc.personalize
 endif
+
+if filereadable(expand("~/.vim/vimrc.statusline"))
+  source ~/.vim/vimrc.statusline
+endif
