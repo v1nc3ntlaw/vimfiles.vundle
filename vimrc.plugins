@@ -1,7 +1,8 @@
 " github repos
+Bundle 'tpope/vim-fugitive'
 
 " vim-scripts repos
-Bundle "Color-Sampler-Pack"
+Bundle 'Color-Sampler-Pack'
 
 " non github repos
 
