@@ -1,0 +1,6 @@
+" Converting tabs to spaces
+" http://vim.wikia.com/wiki/Converting_tabs_to_spaces
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
