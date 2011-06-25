@@ -1,3 +1,9 @@
+" Color schemes
+if has("gui_running")
+else
+  colors v13
+endif
+
 " Converting tabs to spaces
 " http://vim.wikia.com/wiki/Converting_tabs_to_spaces
 set tabstop=2
