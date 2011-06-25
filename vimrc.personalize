@@ -1,6 +1,9 @@
 " Color schemes
 if has("gui_running")
   colors jellybeans
+  if has("gui_gnome")
+    set guifont=Monospace\ Bold\ 9
+  endif
 else
   colors v13
 endif
