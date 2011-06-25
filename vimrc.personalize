@@ -1,5 +1,6 @@
 " Color schemes
 if has("gui_running")
+  colors jellybeans
 else
   colors v13
 endif
