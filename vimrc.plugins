@@ -1,0 +1,8 @@
+" github repos
+
+" vim-scripts repos
+
+" non github repos
+
+" required!
+filetype plugin indent on
