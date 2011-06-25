@@ -1,6 +1,7 @@
 " github repos
 
 " vim-scripts repos
+Bundle "Color-Sampler-Pack"
 
 " non github repos
 
