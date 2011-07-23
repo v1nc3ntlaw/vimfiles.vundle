@@ -1,4 +1,4 @@
-0. `git clone git://github.com/carlhuda/janus.git ~/.vim`
+0. `git clone git://github.com/v1nc3ntlaw/vimfiles.git ~/.vim`
 1. `ln -s ~/.vim/vimrc ~/.vimrc`
 2. `cd ~/.vim`
 3. `git submodule init`
