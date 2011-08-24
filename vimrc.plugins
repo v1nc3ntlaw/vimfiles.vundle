@@ -17,6 +17,8 @@ map <F2> :execute "Ack \'" . expand("<cword>") . "\'"<CR>
 
 " vim-scripts repos
 Bundle 'Color-Sampler-Pack'
+Bundle 'vimwiki'
+let g:vimwiki_list=[{'path':'~/Dropbox/VimWiki'}]
 
 " non github repos
 
