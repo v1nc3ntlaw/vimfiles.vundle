@@ -3,6 +3,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'motemen/git-vim'
 Bundle 'csexton/rvm.vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'majutsushi/tagbar'
 
 Bundle 'fholgado/minibufexpl.vim'
 let g:miniBufExplMapWindowNavVim = 1
