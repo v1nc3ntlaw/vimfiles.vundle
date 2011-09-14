@@ -5,6 +5,8 @@ Bundle 'motemen/git-vim'
 
 "" ruby
 Bundle 'csexton/rvm.vim'
+""" vim-slime usage 1. screen -s rails 2. C-a A console 3. rails c 4. at vim C-c C-c
+Bundle 'jpalardy/vim-slime'
 
 "" navigation
 Bundle 'scrooloose/nerdtree'
