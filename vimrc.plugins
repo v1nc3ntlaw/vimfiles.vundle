@@ -38,6 +38,8 @@ Bundle 'Color-Sampler-Pack'
 "" tools
 Bundle 'vimwiki'
 let g:vimwiki_list=[{'path':'~/Dropbox/VimWiki'}]
+Bundle 'nginx.vim'
+au BufRead,BufNewFile /opt/nginx/conf/* set ft=nginx
 
 " non github repos
 
