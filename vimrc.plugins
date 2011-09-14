@@ -1,10 +1,14 @@
 " github repos
+"" git
 Bundle 'tpope/vim-fugitive'
 Bundle 'motemen/git-vim'
+
+"" ruby
 Bundle 'csexton/rvm.vim'
+
+"" navigation
 Bundle 'scrooloose/nerdtree'
 Bundle 'majutsushi/tagbar'
-
 Bundle 'fholgado/minibufexpl.vim'
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
@@ -13,11 +17,14 @@ let g:miniBufExplModSelTarget = 1
 let g:miniBufExplMapWindowNavVim = 1 "Ctrl-<hjkl> to move to window
 let g:miniBufExplTabWrap = 1         "make tabs show complete (no broken on two lines)
 
+"" tools
 Bundle 'mileszs/ack.vim'
 map <F2> :execute "Ack \'" . expand("<cword>") . "\'"<CR>
 
 " vim-scripts repos
+"" vim colors
 Bundle 'Color-Sampler-Pack'
+"" tools
 Bundle 'vimwiki'
 let g:vimwiki_list=[{'path':'~/Dropbox/VimWiki'}]
 
