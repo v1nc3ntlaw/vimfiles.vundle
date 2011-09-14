@@ -18,6 +18,7 @@ let g:miniBufExplMapWindowNavVim = 1 "Ctrl-<hjkl> to move to window
 let g:miniBufExplTabWrap = 1         "make tabs show complete (no broken on two lines)
 
 "" tools
+Bundle 'ddollar/nerdcommenter'
 Bundle 'vim-scripts/ZoomWin'
 map <Leader><Leader> :ZoomWin<CR>
 Bundle 'ervandew/supertab'
