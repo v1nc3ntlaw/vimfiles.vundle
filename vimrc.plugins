@@ -10,6 +10,7 @@ Bundle 'jpalardy/vim-slime'
 
 "" navigation
 Bundle 'scrooloose/nerdtree'
+""" tagbar usage 1. :TagbarOpen
 Bundle 'majutsushi/tagbar'
 Bundle 'fholgado/minibufexpl.vim'
 let g:miniBufExplMapWindowNavVim = 1
@@ -20,11 +21,14 @@ let g:miniBufExplMapWindowNavVim = 1 "Ctrl-<hjkl> to move to window
 let g:miniBufExplTabWrap = 1         "make tabs show complete (no broken on two lines)
 
 "" tools
+""" nerdcommenter usage 1. <leader>c<space>
 Bundle 'ddollar/nerdcommenter'
+""" ZoomWin usage 1. C-w o or <leader><leader>
 Bundle 'vim-scripts/ZoomWin'
 map <Leader><Leader> :ZoomWin<CR>
 Bundle 'ervandew/supertab'
 Bundle 'tpope/vim-surround'
+""" ack usage 1. F2
 Bundle 'mileszs/ack.vim'
 map <F2> :execute "Ack \'" . expand("<cword>") . "\'"<CR>
 
