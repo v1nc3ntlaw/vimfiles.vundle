@@ -19,6 +19,7 @@ let g:miniBufExplTabWrap = 1         "make tabs show complete (no broken on two 
 
 "" tools
 Bundle 'vim-scripts/ZoomWin'
+map <Leader><Leader> :ZoomWin<CR>
 Bundle 'ervandew/supertab'
 Bundle 'tpope/vim-surround'
 Bundle 'mileszs/ack.vim'
