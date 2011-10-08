@@ -29,6 +29,9 @@ set showbreak=...
 set visualbell t_vb= "disable visual bell
 set wrap linebreak nolist
 
+" hook diff mode with wrap
+au FilterWritePre * if &diff | windo set wrap
+
 " Converting tabs to spaces
 " http://vim.wikia.com/wiki/Converting_tabs_to_spaces
 set tabstop=2
