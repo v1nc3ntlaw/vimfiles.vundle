@@ -21,6 +21,7 @@ let g:miniBufExplMapWindowNavVim = 1 "Ctrl-<hjkl> to move to window
 let g:miniBufExplTabWrap = 1         "make tabs show complete (no broken on two lines)
 
 "" tools
+Bundle 'Townk/vim-autoclose'
 """ nerdcommenter usage 1. <leader>c<space>
 Bundle 'ddollar/nerdcommenter'
 """ ZoomWin usage 1. C-w o or <leader><leader>
